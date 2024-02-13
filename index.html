@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawxy search engine</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- javascript file -->
+    <script type="module" src="./script.js" defer></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </head>
+  <body>
+    <div id="pse-whole-contianer" class="pse-contianer">
+        <!-- top section  -->
+      <div class="pse-search-container">
+        <div class="pse-title-container">
+          <img class="pse-logo" src="./icons/Mask grouppawxy-logo.svg" />
+          <span class="pse-title-txt">Simple Video Search Engine</span>
+        </div>
+        <div class="pse-search-bar">
+          <input class="pse-user-query" />
+          <img id="pse-search" src="./icons/Searchsearch-glass.svg" />
+        </div>
+      </div>
+      <!-- middle section  -->
+      <div class="pse-card-stack" id="pse-card-stack-contianer"></div>
+<!-- <div> hello worl</div> -->
+      <!-- bottom section  -->
+      <div class="pse-bottom-bar-continer">
+        <div class="pse-controller-container">
+          <div class="hide pse-prev-btn-container" id="pse-prev-btn" >
+            <img src="./icons/Iconsleft-arrow.svg" /><span>Prev</span>
+          </div>
+          <div class="hide pse-pagination-container" id="pse-pagination"></div>
+          <div class="pse-next-btn-container" id="pse-next-btn" >
+            <span>Next</span><img src="./icons/Iconsright-arrow.svg" />
+          </div>
+        </div>
+        <div class="pse-current-status">
+          <img src="./icons/Searchsearch-glass.svg" />
+          <span class="pse-current-status-txt"
+            >Search <span id="pse-search-param"></span> on Google</span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://apis.google.com/js/api.js"></script>
+  </body>
+</html>
